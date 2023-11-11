@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+        width: 100%;
+        height: 120px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+        z-index: 2;
+    }
+
+    #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .isim {
+        font-size: 50px;
+        font-family: 'Caveat', cursive;
+        color: white;
+    }
+
+    .input {
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        /* padding: 10px; */
+        
+    }
+
+    input {
+        border-radius: 20px;
+        background-color: rgb(78, 77, 77);
+        color: white;
+        transition: all .5s linear;
+    }
+
+    input:focus {
+    color: rgb(255, 0, 0);
+    background-color: #212121;
+    outline-color: rgb(255, 0, 0);
+    box-shadow: -3px -3px 15px rgb(255, 0, 0);
+    transition: .1s;
+    transition-property: box-shadow;
+    }
+
+    body {
+        background-color: rgb(187, 186, 186);
+    }
+
+    .kutu {
+        top: 15%;
+        left: 18%;
+        width: 1600px;
+        height: 900px;
+        border: 3px solid black;
+        position: absolute;
+        border-radius: 3%;
+        box-shadow: 0 0 22px rgb(0, 0, 0), 0 0 24px rgb(0, 0, 0)
+    }
+
+    .anadiv {
+        gap: 1px;
+        position: absolute;
+        top: 1%;
+        left: 70%;
+       
+    }
+
+    .kutu2 {
+        width: 400px;
+        height: 500px;
+        border: 1px solid black; 
+        position: absolute;
+        left: 70%;
+        top: 30%;
+        border-radius: 3%;
+        gap: 1px;;
+        font-size: 18px;
+        font-family: 'Caveat', cursive;
+        border: none;
+    }
+
+
+    .kutu20 {
+        top: 5%;
+        left: 1%;
+        width: 900px;
+        height: 700px;
+        border: 1px solid black;
+        border-radius: 3%;
+        position: absolute;
+        background-image: url(images/azure\ dragon2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+    }
+
+    .azure { 
+        font-family: 'Caveat', cursive;
+        font-size: 60px;
+        background: linear-gradient(to right, rgb(0, 60, 255), rgb(0, 110, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .aa {
+        font-family: 'Caveat', cursive;
+        font-size: 40px;
+        background: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 60, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .fiyat {
+        font-family: 'Caveat', cursive;
+        font-size: 60px;
+    }
+
+    .ll {
+        font-size: 25px;
+    }
+
+    .bb {
+        font-size: 20px;
+    }
+
+    .ll, .bb {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    .cc {
+        font-size: 25px;
+    }
+
+    .gg {
+        font-size: 20px;
+    }
+
+    .cc, .gg {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    .uu {
+        font-size: 25px;
+    }
+
+    .pp {
+        font-size: 20px;
+    }
+
+    .uu, .pp {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    .mm {
+        font-size: 25px;
+    }
+
+    .nn {
+        font-size: 20px;
+    }
+    
+    .mm, .nn {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    .tt {
+        font-size: 25px;
+    }
+
+    .hh {
+        font-size: 20px;
+    }
+    
+    .tt, .hh {
+        display: inline;
+        margin: 0 20px;
+
+    }
+
+    .sepette {
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        top: 87%;
+        left: 73%;
+        border-radius: 5%;
+        background-color: black;
+        transition: all 1s ease;
+    }
+
+    .satınal {
+        font-family: 'Caveat', cursive;
+        font-size: 40px;
+        position: absolute;
+        top: 20%;
+        left: 28%;
+        color: rgb(38, 0, 255);
+    }
+
+    .sepette:hover {
+        transform: scale(1.10);
+        
+    }
+
