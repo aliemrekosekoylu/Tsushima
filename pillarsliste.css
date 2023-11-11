@@ -1,0 +1,1654 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to right, rgb(41, 41, 41), rgb(0, 0, 0));
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+
+#logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.isim {
+  font-size: 50px;
+  font-family: 'Caveat', cursive;
+  color: white;
+}
+
+.input {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  /* padding: 10px; */
+
+}
+
+input {
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+  transition: all .5s linear;
+}
+
+input:focus {
+  color: rgb(255, 0, 0);
+  background-color: #000000;
+  outline-color: rgb(255, 0, 0);
+  box-shadow: -3px -3px 15px rgb(255, 0, 0);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+main {
+  background-color: rgb(31, 31, 31);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.kutuayar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  padding: 6%;
+  gap: 50px;
+}
+
+
+
+.kutu {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/haciman.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3%;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.7s ease-in-out;
+  transition: all 1s ease;
+}
+
+.kutu:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px red, 0 0 24px red
+}
+
+.metin {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu:hover .metin {
+  opacity: 1;
+}
+
+.Haciman {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(200, 255, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(200, 255, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(200, 255, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu2 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/azure\ dragon2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3%;
+  transition: box-shadow 0.7s ease-in-out;
+  transition: all 1s ease;
+}
+
+.kutu2:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(0, 60, 255), 0 0 24px rgb(0, 110, 255)
+}
+
+.metin2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu2:hover .metin2 {
+  opacity: 1;
+}
+
+.azure {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(0, 17, 250), rgb(75, 132, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama2 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(0, 17, 250), rgb(75, 132, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat2 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(0, 17, 250), rgb(75, 132, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu3 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Bishamons\ Fortune.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3%;
+  transition: box-shadow 0.7s ease-in-out;
+  transition: all 1s ease;
+}
+
+.kutu3:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 84, 84), 0 0 24px rgb(255, 72, 0)
+}
+
+.metin3 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu3:hover .metin3 {
+  opacity: 1;
+}
+
+.Bishamons {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(189, 28, 0), rgb(97, 45, 45));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama3 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(189, 28, 0), rgb(97, 45, 45));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat3 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(189, 28, 0), rgb(797, 45, 45));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu4 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Dueling\ Festival.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3%;
+  transition: box-shadow 0.7s ease-in-out;
+  transition: all 1s ease;
+}
+
+.kutu4:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 84, 84), 0 0 24px rgb(255, 72, 0)
+}
+
+.metin4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu4:hover .metin4 {
+  opacity: 1;
+}
+
+.dueling {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(226, 93, 70), rgb(253, 175, 175));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama4 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(226, 93, 70), rgb(253, 175, 175));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat4 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(226, 93, 70), rgb(253, 175, 175));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu5 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/fuujin.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu5:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(190, 136, 252), 0 0 24px rgb(174, 0, 255)
+}
+
+.metin5 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu5:hover .metin5 {
+  opacity: 1;
+}
+
+.fuujin {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(245, 212, 255), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama5 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(245, 212, 255), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat5 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(245, 212, 255), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu6 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Genbus\ Darkness.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu6:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(112, 112, 112), 0 0 24px rgb(218, 218, 218)
+}
+
+.metin6 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu6:hover .metin6 {
+  opacity: 1;
+}
+
+.genbus {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(105, 105, 105));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama6 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(105, 105, 105));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat6 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(105, 105, 105));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu7 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/gold\ koi.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu7:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(8, 4, 255), 0 0 24px rgb(214, 220, 240)
+}
+
+.metin7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu7:hover .metin7 {
+  opacity: 1;
+}
+
+.gold {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(217, 220, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama7 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(217, 220, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat7 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(17, 220, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu8 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Hijiki\ in\ Sunlight\ 3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu8:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 230, 0), 0 0 24px rgb(255, 228, 77)
+}
+
+.metin8 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu8:hover .metin8 {
+  opacity: 1;
+}
+
+.hijiki {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 251, 0), rgb(255, 246, 113));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama8 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 251, 0), rgb(255, 217, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat8 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 251, 0), rgb(255, 217, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu9 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Hunting\ Bear.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu9:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 145, 2), 0 0 24px rgb(243, 253, 102)
+}
+
+.metin9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu9:hover .metin9 {
+  opacity: 1;
+}
+
+.hunting {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(126, 124, 0), rgb(133, 128, 61));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama9 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(126, 124, 0), rgb(133, 128, 61));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat9 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(126, 124, 0), rgb(133, 128, 61));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu10 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Hidden\ Forest.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu10:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(89, 197, 0), 0 0 24px rgb(0, 212, 35)
+}
+
+.metin10 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu10:hover .metin10 {
+  opacity: 1;
+}
+
+.hidden {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(189, 197, 0), rgb(0, 212, 35));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama10 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(89, 197, 0), rgb(0, 212, 35));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat10 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(89, 197, 0), rgb(0, 212, 35));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu11 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Immortal\ Hope\ 2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu11:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 255, 255), 0 0 24px rgb(143, 37, 243)
+}
+
+.metin11 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu11:hover .metin11 {
+  opacity: 1;
+}
+
+.immortal {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(143, 37, 243));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama11 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(143, 37, 243));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat11 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(143, 37, 243));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+
+.kutu12 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Islands\ Keeper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu12:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 255, 255), 0 0 24px rgb(0, 212, 35)
+}
+
+.metin12 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu12:hover .metin12 {
+  opacity: 1;
+}
+
+.bekçi {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 212, 35));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama12 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 212, 35));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat12 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 212, 35));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu13 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Mamushi\ Venom.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu13:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(161, 0, 0), 0 0 24px rgb(199, 199, 199)
+}
+
+.metin13 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu13:hover .metin13 {
+  opacity: 1;
+}
+
+.mamushi {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(161, 0, 0), rgb(255, 151, 151));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama13 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(161, 0, 0), rgb(255, 151, 151));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat13 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(161, 0, 0), rgb(199, 199, 199));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu14 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Mashiras\ Bite\ 2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu14:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(160, 220, 238), 0 0 24px rgb(98, 179, 255)
+}
+
+.metin14 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu14:hover .metin14 {
+  opacity: 1;
+}
+
+.mashira {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(160, 220, 238), rgb(230, 157, 252));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama14 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(160, 220, 238), rgb(230, 157, 252));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat14 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(160, 220, 238), rgb(230, 157, 252));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu15 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Midnight\ Hanabi.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu15:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(44, 44, 44), 0 0 24px rgb(0, 4, 248)
+}
+
+.metin15 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu15:hover .metin15 {
+  opacity: 1;
+}
+
+.hanabi {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(44, 44, 44), rgb(0, 4, 248));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama15 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(44, 44, 44), rgb(0, 4, 248));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat15 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(44, 44, 44), rgb(0, 4, 248));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu16 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Moon\ Bears\ Paw.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu16:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(107, 0, 194), 0 0 24px rgb(142, 4, 255)
+}
+
+.metin16 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu16:hover .metin16 {
+  opacity: 1;
+}
+
+.moon {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(84, 0, 153), rgb(191, 34, 253));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama16 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(84, 0, 153), rgb(191, 34, 253));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat16 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(84, 0, 153), rgb(191, 34, 253));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+.kutu17 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Omukades\ Revenge.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu17:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(102, 105, 255), 0 0 24px rgb(255, 30, 0)
+}
+
+.metin17 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu17:hover .metin17 {
+  opacity: 1;
+}
+
+.omukades {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(70, 128, 255), rgb(255, 30, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama17 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(70, 128, 255), rgb(255, 30, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat17 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(70, 128, 255), rgb(255, 30, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu18 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Izanamis\ Grief.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu18:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(255, 102, 0), 0 0 24px rgb(253, 135, 0)
+}
+
+.metin18 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu18:hover .metin18 {
+  opacity: 1;
+}
+
+.izanami {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 102, 0), rgb(253, 135, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama18 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 102, 0), rgb(253, 135, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat18 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(255, 102, 0), rgb(253, 135, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu19 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Shoguns\ Storm.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu19:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(5, 1, 211), 0 0 24px rgb(0, 12, 185)
+}
+
+.metin19 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu19:hover .metin19 {
+  opacity: 1;
+}
+
+.shogun {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(5, 1, 211), rgb(0, 12, 185));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+}
+
+.aciklama19 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(5, 1, 211), rgb(0, 12, 185));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat19 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(5, 1, 211), rgb(0, 12, 185));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+.kutu20 {
+  width: 500px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url(images/Twilight\ Oni.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.7s ease-in-out;
+  border-radius: 3%;
+  transition: all 1s ease;
+}
+
+.kutu20:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 22px rgb(0, 0, 0), 0 0 24px rgb(0, 0, 0)
+}
+
+.metin20 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.kutu20:hover .metin20 {
+  opacity: 1;
+}
+
+.oni {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(2, 197, 67), rgb(119, 119, 119));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+
+
+}
+
+.aciklama20 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(2, 197, 67), rgb(119, 119, 119));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 20px;
+}
+
+.fiyat20 {
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(to right, rgb(2, 197, 67), rgb(119, 119, 119));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+  font-size: 50px;
+  top: 80px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+  nav {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgb(41, 41, 41), rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    margin-top: 10px;
+  }
+
+  #logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .isim {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  input {
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: all 0.5s linear;
+    padding: 5px;
+  }
+
+  input:focus {
+    color: rgb(255, 0, 0);
+    background-color: #000000;
+    outline-color: rgb(255, 0, 0);
+    box-shadow: -3px -3px 15px rgb(255, 0, 0);
+  }
+
+  .aciklama, .aciklama2, .aciklama3, .aciklama4, .aciklama5, .aciklama6, .aciklama7, .aciklama8, .aciklama9, .aciklama10,
+   .aciklama11, .aciklama12, .aciklama13, .aciklama14, .aciklama15, .aciklama16, .aciklama17, .aciklama18, .aciklama19, .aciklama20{
+    display: none;
+  }
+
+  .fiyat, .fiyat2, .fiyat3, .fiyat4, .fiyat5, .fiyat6, .fiyat7, .fiyat8, .fiyat9, .fiyat10,
+  .fiyat11, .fiyat12, .fiyat13, .fiyat14, .fiyat15, .fiyat16, .fiyat17, .fiyat18, .fiyat19, .fiyat20 {
+    display: none;
+  }
+
+  .kutuayar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .kutu {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/haciman.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+  }
+
+  .kutu2 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/azure\ dragon2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+  }
+  
+  .kutu3 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Bishamons\ Fortune.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+  }
+
+  .kutu4 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Dueling\ Festival.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+  }
+
+  .kutu5 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/fuujin.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu6 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Genbus\ Darkness.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu7 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/gold\ koi.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu8 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Hijiki\ in\ Sunlight\ 3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu9 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid rgb(0, 0, 0);
+    background-image: url(images/Hunting\ Bear.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu10 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Hidden\ Forest.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu11 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Immortal\ Hope\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+
+  .kutu12 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Islands\ Keeper.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu13 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Mamushi\ Venom.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu14 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Mashiras\ Bite\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+
+  .kutu15 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Midnight\ Hanabi.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu16 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Moon\ Bears\ Paw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  
+
+  .kutu17 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Omukades\ Revenge.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu18 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Izanamis\ Grief.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu19 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Shoguns\ Storm.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+
+  .kutu20 {
+    width: 370px;
+    height: 270px;
+    border: 3px solid black;
+    background-image: url(images/Twilight\ Oni.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+  }
+  
+}

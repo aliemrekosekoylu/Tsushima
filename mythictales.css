@@ -1,0 +1,1643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to right, rgb(41, 41, 41)  , rgb(0, 0, 0) );
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.isim {
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    color: white;
+}
+
+.input {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    /* padding: 10px; */
+    
+}
+
+input {
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: all .5s linear;
+}
+
+input:focus {
+color: rgb(255, 0, 0);
+background-color: #000000;
+outline-color: rgb(255, 0, 0);
+box-shadow: -3px -3px 15px rgb(255, 0, 0);
+transition: .1s;
+transition-property: box-shadow;
+}
+
+/* body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+} */
+
+main {
+    background-color: rgb(31, 31, 31);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.kutuayar {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    padding: 6%;
+    gap: 50px;
+}
+
+
+
+.kutu {
+    width:500px;
+    height:400px;
+    border: 3px solid black;
+    background-image: url(images/The\ Storm\ of\ Clan\ Sakai.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+}
+
+.kutu:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(212, 212, 212), 0 0 24px rgb(0, 89, 255)  
+}
+
+.metin {
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu:hover .metin {
+        opacity: 1;
+      }
+    
+      .Sakai {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(219, 219, 219), rgb(171, 221, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        
+        
+      }
+    
+      .aciklama {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(219, 219, 219), rgb(171, 221, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(219, 219, 219), rgb(171, 221, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+.kutu2 {
+    width:500px;
+    height:400px;
+    border: 3px solid black;
+    background-image: url(images/Hero\ of\ Tsushima\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;   
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+}
+
+.kutu2:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(255, 243, 138), 0 0 24px rgb(224, 209, 0)
+}
+
+.metin2 {
+    position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu2:hover .metin2 {
+        opacity: 1;
+      }
+    
+      .Tsushima {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 252, 86), rgb(247, 252, 178));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama2 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 252, 86), rgb(247, 252, 178));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat2 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 252, 86), rgb(247, 252, 178));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+
+.kutu3 {
+    width:500px;
+    height:400px;
+    border: 3px solid black;
+    background-image: url(images/Heavenly\ Falcon.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+}
+
+.kutu3:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(19, 23, 255), 0 0 24px rgb(255, 255, 255)
+}
+
+.metin3 {
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu3:hover .metin3 {
+        opacity: 1;
+      }
+    
+      .Gök {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(211, 236, 250), rgb(133, 206, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        
+        
+      }
+    
+      .aciklama3 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(211, 236, 250), rgb(133, 206, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat3 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(211, 236, 250), rgb(133, 206, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+
+.kutu4 {
+    width:500px;
+    height:400px;
+    border: 3px solid black;
+    background-image: url(images/Nekomas\ Fang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    transition: box-shadow 0.7s ease-in-out;
+    transition: all 1s ease;
+}
+
+.kutu4:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(173, 173, 173), 0 0 24px rgb(112, 112, 112)
+}
+
+.metin4 {
+  position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu4:hover .metin4 {
+      opacity: 1;
+    }
+  
+    .neko {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(173, 173, 173), rgb(112, 112, 112));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      
+      
+    }
+  
+    .aciklama4 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(173, 173, 173), rgb(112, 112, 112));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat4 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(173, 173, 173), rgb(112, 112, 112));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+.kutu5{
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Sly\ Tanuki.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu5:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(44, 153, 255), 0 0 24px rgb(0, 0, 0)
+}
+
+.metin5 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu5:hover .metin5 {
+      opacity: 1;
+    }
+  
+    .sly {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(44, 153, 255), rgb(94, 94, 94));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama5 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(44, 153, 255), rgb(94, 94, 94));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat5 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(44, 153, 255), rgb(94, 94, 94));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+.kutu6 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Spring\ Bamboo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu6:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(2, 255, 56), 0 0 24px rgb(51, 255, 0)
+}
+
+.metin6 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu6:hover .metin6 {
+      opacity: 1;
+    }
+  
+    .bambu {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(2, 255, 56), rgb(51, 255, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama6 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(2, 255, 56), rgb(51, 255, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat6 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(2, 255, 56), rgb(51, 255, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+.kutu7 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Tanukis\ Brush.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu7:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(8, 4, 255), 0 0 24px rgb(214, 220, 240)
+}
+
+.metin7 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu7:hover .metin7 {
+      opacity: 1;
+    }
+  
+    .tanuki {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(8, 4, 255), rgb(214, 220, 240));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama7 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(8, 4, 255), rgb(214, 220, 240));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat7 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(8, 4, 255), rgb(214, 220, 240));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+.kutu8 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/The\ Stonecutter.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu8:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(250, 163, 224), 0 0 24px rgb(214, 214, 214)
+}
+
+.metin8 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu8:hover .metin8 {
+      opacity: 1;
+    }
+  
+    .taşkesici {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(250, 163, 224), rgb(214, 214, 214));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama8 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(250, 163, 224), rgb(214, 214, 214));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat8 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(250, 163, 224), rgb(214, 214, 214));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+.kutu9 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Warriors\ Brush.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu9:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(0, 0, 0), 0 0 24px rgb(0, 0, 0)
+}
+
+.metin9 {
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu9:hover .metin9 {
+        opacity: 1;
+      }
+    
+      .fırça {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(151, 151, 151));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama9 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(151, 151, 151));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat9 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(151, 151, 151));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+.kutu10 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Warriors\ Faith.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu10:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(30, 0, 202), 0 0 24px rgb(1, 196, 255)
+}
+
+.metin10 {
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu10:hover .metin10 {
+        opacity: 1;
+      }
+    
+      .inanç {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(31, 62, 201), rgb(15, 1, 148));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama10 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(31, 62, 201), rgb(15, 1, 148));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat10 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(31, 62, 201), rgb(15, 1, 148));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+.kutu11 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Yashas\ Embers.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu11:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(255, 95, 95), 0 0 24px rgb(255, 86, 7)
+}
+
+.metin11 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu11:hover .metin11 {
+      opacity: 1;
+    }
+  
+    .Kor {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 95, 95), rgb(15, 1, 148));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama11 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 95, 95), rgb(15, 1, 148));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat11 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 95, 95), rgb(15, 1, 148));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+.kutu12 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Yuzu\ Peel.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu12:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(201, 164, 0), 0 0 24px rgb(192, 206, 1)
+}
+
+.metin12 {
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu12:hover .metin12 {
+        opacity: 1;
+      }
+    
+      .yuzu {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(139, 130, 0), rgb(255, 217, 0));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama12 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(139, 130, 0), rgb(255, 217, 0));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+          .fiyat12 {
+          font-family: 'Caveat', cursive;
+          background: linear-gradient(to right, rgb(139, 130, 0), rgb(255, 217, 0));
+          -webkit-background-clip: text;
+          color: transparent;
+          transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+          font-size: 50px;
+          top: 80px;
+          text-align: center;
+        }
+
+.kutu13 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Warriors\ Shadow\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu13:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgba(138, 2, 216, 0.623), 0 0 24px rgb(133, 0, 185)
+}
+
+.metin13 {
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu13:hover .metin13 {
+        opacity: 1;
+      }
+    
+      .gölge {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(89, 0, 124), rgb(144, 11, 253));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama13 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(89, 0, 124), rgb(144, 11, 253));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+          .fiyat13 {
+          font-family: 'Caveat', cursive;
+          background: linear-gradient(to right, rgb(89, 0, 124), rgb(144, 11, 253));
+          -webkit-background-clip: text;
+          color: transparent;
+          transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+          font-size: 50px;
+          top: 80px;
+          text-align: center;
+        }
+
+.kutu14 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Prowling\ Tiger.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu14:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(145, 212, 243), 0 0 24px rgb(3, 139, 250)
+}
+
+.metin14 {
+  position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu14:hover .metin14 {
+      opacity: 1;
+    }
+  
+    .kaplan {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(145, 212, 243), rgb(3, 139, 250));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama14 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(145, 212, 243), rgb(3, 139, 250));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat14 {
+    font-family: 'Caveat', cursive;
+    background: linear-gradient(to right, rgb(145, 212, 243), rgb(3, 139, 250));
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+    font-size: 50px;
+    top: 80px;
+    text-align: center;
+  }
+
+.kutu15 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Emperors\ Tears.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu15:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(255, 255, 255), 0 0 24px rgb(46, 130, 255)
+}
+
+.metin15 {
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu15:hover .metin15 {
+        opacity: 1;
+      }
+    
+      .imparator {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(1, 1, 133), rgb(46, 130, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama15 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(1, 1, 133), rgb(46, 130, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat15 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(1, 1, 133), rgb(46, 130, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+.kutu16 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Snow\ Demons\ Eyes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out; 
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu16:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(255, 255, 255), 0 0 24px rgb(255, 255, 255)
+}
+
+.metin16 {
+    position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out
+    }
+    
+    .kutu16:hover .metin16 {
+        opacity: 1;
+      }
+    
+      .snow {
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+      }
+    
+      .aciklama16 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 20px;
+      }
+
+      .fiyat16 {
+        font-family: 'Caveat', cursive;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+        font-size: 50px;
+        top: 80px;
+        text-align: center;
+      }
+
+.kutu17 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Sea\ Dragons\ Wing.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu17:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(0, 109, 160), 0 0 24px rgb(1, 146, 139)
+}
+
+.metin17 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu17:hover .metin17 {
+      opacity: 1;
+    }
+  
+    .sea {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(0, 109, 160), rgb(1, 146, 139));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama17 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(0, 109, 160), rgb(1, 146, 139));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat17 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(0, 109, 160), rgb(1, 146, 139));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+.kutu18 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/The\ Spiders\ Kiss.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu18:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(255, 0, 106), 0 0 24px rgb(189, 0, 57)
+}
+
+.metin18 {
+  position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu18:hover .metin18 {
+      opacity: 1;
+    }
+  
+    .kiss {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 0, 106), rgb(189, 0, 57));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama18 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 0, 106), rgb(189, 0, 57));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat18 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 0, 106), rgb(189, 0, 57));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+.kutu19 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Undying\ Rage.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu19:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(255, 0, 0), 0 0 24px rgb(255, 0, 0)
+}
+
+.metin19 {
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu19:hover .metin19 {
+      opacity: 1;
+    }
+  
+    .rage {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama19 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat19 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+.kutu20 {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url(images/Tempests\ End.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+
+.kutu20:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 22px rgb(168, 88, 88), 0 0 24px rgb(177, 109, 109)
+}
+
+.metin20 {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+  }
+  
+  .kutu20:hover .metin20 {
+      opacity: 1;
+    }
+  
+    .end {
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(168, 88, 88), rgb(177, 109, 109));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out; 
+    }
+  
+    .aciklama20 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(168, 88, 88), rgb(177, 109, 109));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 20px;
+    }
+
+    .fiyat20 {
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right, rgb(168, 88, 88), rgb(177, 109, 109));
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out;
+      font-size: 50px;
+      top: 80px;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 768px) {
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      body {
+        font-family: Arial, sans-serif;
+      }
+    
+    
+      nav {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to right, rgb(41, 41, 41), rgb(0, 0, 0));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      #logo {
+        width: 120px;
+        height: 120px;
+        z-index: 2;
+        margin-top: 10px;
+      }
+    
+      #logo img {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .isim {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+      }
+    
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+    
+      input {
+        border-radius: 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
+        transition: all 0.5s linear;
+        padding: 5px;
+      }
+    
+      input:focus {
+        color: rgb(255, 0, 0);
+        background-color: #000000;
+        outline-color: rgb(255, 0, 0);
+        box-shadow: -3px -3px 15px rgb(255, 0, 0);
+      }
+    
+      .aciklama, .aciklama2, .aciklama3, .aciklama4, .aciklama5, .aciklama6, .aciklama7, .aciklama8, .aciklama9, .aciklama10,
+       .aciklama11, .aciklama12, .aciklama13, .aciklama14, .aciklama15, .aciklama16, .aciklama17, .aciklama18, .aciklama19, .aciklama20{
+        display: none;
+      }
+    
+      .fiyat, .fiyat2, .fiyat3, .fiyat4, .fiyat5, .fiyat6, .fiyat7, .fiyat8, .fiyat9, .fiyat10,
+      .fiyat11, .fiyat12, .fiyat13, .fiyat14, .fiyat15, .fiyat16, .fiyat17, .fiyat18, .fiyat19, .fiyat20 {
+        display: none;
+      }
+    
+      .kutuayar {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      .kutu {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/The\ Storm\ of\ Clan\ Sakai.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3%;
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow 0.7s ease-in-out;
+        transition: all 1s ease;
+      }
+    
+      .kutu2 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Hero\ of\ Tsushima\ 2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3%;
+        transition: box-shadow 0.7s ease-in-out;
+        transition: all 1s ease;
+      }
+      
+      .kutu3 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Heavenly\ Falcon.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3%;
+        transition: box-shadow 0.7s ease-in-out;
+        transition: all 1s ease;
+      }
+    
+      .kutu4 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Nekomas\ Fang.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3%;
+        transition: box-shadow 0.7s ease-in-out;
+        transition: all 1s ease;
+      }
+    
+      .kutu5 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Sly\ Tanuki.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu6 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Spring\ Bamboo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu7 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Tanukis\ Brush.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu8 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/The\ Stonecutter.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu9 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid rgb(0, 0, 0);
+        background-image: url(images/Warriors\ Brush.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu10 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Warriors\ Faith.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu11 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Yashas\ Embers.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+    
+      .kutu12 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Yuzu\ Peel.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu13 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Warriors\ Shadow\ 2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu14 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Prowling\ Tiger.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+    
+      .kutu15 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Emperors\ Tears.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu16 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Snow\ Demons\ Eyes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      
+    
+      .kutu17 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Sea\ Dragons\ Wing.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu18 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/The\ Spiders\ Kiss.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu19 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Undying\ Rage.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+    
+      .kutu20 {
+        width: 370px;
+        height: 270px;
+        border: 3px solid black;
+        background-image: url(images/Tempests\ End.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.7s ease-in-out;
+        border-radius: 3%;
+        transition: all 1s ease;
+      }
+      
+    }
